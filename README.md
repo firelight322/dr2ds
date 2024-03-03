@@ -13,8 +13,8 @@ Adaptive triggers, meet Dirt Rally 2. Dirt Rally 2, meet adaptive triggers.
 ## Features
 - Selection of curves for brakes and throttle.
 	- Constant : Fixed force. Useful for throttle.
-	- Three Stage : Soft to medium to hard strength.
-	- Conventional Brakes : A formula I picked up from some white paper. Basically 2 stages.
+  	- Conventional Brakes : A formula I picked up from some white paper. Basically 2 stages.
+	- Three Stage : Ramps up from soft to medium to hard strength.
 	- Curve : Log, linear or exponential curve. Controllable through settings.
 - Suspension effect.
 	- Pushes back on the adaptive trigger when suspension compresses. Purely for immersion.
