@@ -24,10 +24,9 @@ Adaptive triggers, meet Dirt Rally 2. Dirt Rally 2, meet adaptive triggers.
 - The app should detect you controller and you should feel forces immediately.
 - Enjoy!
 
-## Setup
-To get telemetry feedback, you'll need to enable Dirt Rally UDP packets. But if you have problems with telemetry, you can still use the force feedback presets to improve the experience.
+## Telemetry Setup
+To get telemetry feedback, you'll need to enable Dirt Rally UDP packets. But if you have problems with telemetry, you can still use the force feedback presets without it.
 
-### Setting Up Dirt Rally 2 Telemetry
 1. Navigate to your game folder, usually in `%userprofile%\Documents\My Games\DiRT Rally 2.0\hardwaresettings`
 2. Open `hardware_settings_config.xml` in a text editor like notepad.
 3. Look for a line starting with `<udp`.
@@ -35,12 +34,16 @@ To get telemetry feedback, you'll need to enable Dirt Rally UDP packets. But if 
   - Note, if you didn't find that line, add it to the `<motion_platform>` section.
 5. If all goes well, it should detect both your controller and the game.
 
-### Settings.ini
+## Settings.ini
 You can customize the behavior through the `dr2ds-settings.ini` file. Most gamers have played around with ini files in the past, but if you haven't, worry not. It is well annotated with examples and everything.
-TBF
+```ini
+todo
+```
 
 ## Help
-TBF
+```
+todo
+```
 
 ## Todo
 Just some notes so I don't forget. Assume none of this will ever happen.
