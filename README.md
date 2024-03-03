@@ -2,10 +2,13 @@
 Adaptive triggers, meet Dirt Rally 2. Dirt Rally 2, meet adaptive triggers.
 
 ![dr2ds screenshot](https://github.com/firelight322/dr2ds/blob/main/dr2ds-screenshot.jpg)
+<!-- <img src="https://github.com/firelight322/dr2ds/blob/main/dr2ds-demo.gif" width="900" height="506"> -->
 
 `dr2ds` is a simple tool to enable dual sense features when playing Dirt Rally 2. It has a few curves for the triggers and supports reading DR2 telemetry to add immersive effects.
 
 [download latest](https://github.com/firelight322/dr2ds/releases/latest)
+
+
 
 ## Features
 - Selection of curves for brakes and throttle.
