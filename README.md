@@ -24,7 +24,7 @@ Adaptive triggers, meet Dirt Rally 2. Dirt Rally 2, meet adaptive triggers.
 ## Installing
 - Download the latest version from the release page.
 - Double click the application to launch.
-  - Make sure the `dr2ds-settings.ini` file is next to `dr2ds.exe`.
+  - ~Make sure the `dr2ds-settings.ini` file is next to `dr2ds.exe`.~ (disabled during alpha)
   - Yes it is a terminal application, but you shouldn't need to know anything about command prompts to use it.
 - The app should detect you controller and you should feel forces immediately.
 - Enjoy!
@@ -42,11 +42,6 @@ To get telemetry feedback, you'll need to enable Dirt Rally UDP packets. But if 
 ## Settings.ini
 You can customize the behavior through the `dr2ds-settings.ini` file. Most gamers have played around with ini files in the past, but if you haven't, worry not. It is well annotated with examples and everything.
 ```ini
-todo
-```
-
-## Help
-```
 todo
 ```
 
