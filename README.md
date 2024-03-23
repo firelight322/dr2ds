@@ -24,7 +24,8 @@ Adaptive triggers, meet Dirt Rally 2. Dirt Rally 2, meet adaptive triggers.
 ## Installing
 - Download the latest version from the release page.
 - Double click the application to launch.
-  - ~Make sure the `dr2ds-settings.ini` file is next to `dr2ds.exe`.~ (disabled during alpha)
+  - The first time `dr2ds` runs, it will create a default `dr2ds.ini` settings file.
+  - You can open up the file and edit it while the app is running, it will update its settings.
   - Yes it is a terminal application, but you shouldn't need to know anything about command prompts to use it.
 - The app should detect you controller and you should feel forces immediately.
 - Enjoy!
@@ -39,10 +40,112 @@ To get telemetry feedback, you'll need to enable Dirt Rally UDP packets. But if 
   - Note, if you didn't find that line, add it to the `<motion_platform>` section.
 5. If all goes well, it should detect both your controller and the game.
 
-## Settings.ini
-You can customize the behavior through the `dr2ds-settings.ini` file. Most gamers have played around with ini files in the past, but if you haven't, worry not. It is well annotated with examples and everything.
+## dr2ds.ini
+You can customize the behavior through the `dr2ds.ini` file. Most gamers have played around with ini files in the past, but if you haven't, worry not. It is well annotated with examples and everything.
 ```ini
-todo
+
+[Global Settings]
+
+  ; The ini file version. Do not modify this.
+version = 0
+
+  ; When set to true, the brake settings are mapped to the right trigger and accel settings are mapped to the left trigger.
+  ; Possible values : true or false.
+flip_triggers = false
+
+  ; Enables quitting application by pressing L1 + R1 at the same time.
+  ; Possible values : true or false.
+l1r1_exit = false
+
+  ; This settings is used by the suspension push back effect.
+  ; It is the ratio between the front and back suspensions.
+  ; Possible values : 0.0 to 1.0 (percentage).
+  ;   1.0 = front suspension only
+  ;   0.0 = back suspension only.
+suspension_effect_front_bias = 0.5
+
+[Brake Settings]
+
+  ; The simulation preset to use for this trigger.
+  ; Possible values :
+  ;   "constant"
+  ;   "conventional_brakes"
+  ;   "three_stage"
+  ;   "curve"
+preset = "conventional_brakes"
+
+  ; The overall average force applied to the trigger.
+  ; The simulation will try to cap the force to this value,
+  ; but environment effects may push it over.
+  ; When in 'constant' preset mode, this is the constant force value.
+  ; Possible values : 0.0 to 1.0 (percentage).
+preset_strength = 0.5
+
+  ; When in 'curve' preset mode, this is the shape (slope) of the curve.
+  ; Possible values : -10.0 to 10.0
+  ;   Negative values : The curve is logarithmic.
+  ;   Zero : The curve is linear.
+  ;   Positive values : The curve is exponential.
+curve_preset_shape = 0.0
+
+  ; The strength of the suspension pushback effect.
+  ; When non zero, enables the suspension force effect.
+  ; This will push on the trigger when your suspension compresses.
+  ; Uses the suspension bias global setting.
+  ; Possible values : 0.0 to 1.0 (percentage).
+suspension_effect_strength = 0.0
+
+  ; Smooths the suspension effect.
+  ; This amplifies big changes and minimizes small changes.
+  ; Possible values : true or false.
+suspension_effect_smoothing = false
+
+  ; The strength of the speed force effect.
+  ; The faster you go, the harder it is to press on the trigger.
+  ; Possible values : 0.0 to 1.0 (percentage).
+speed_effect_strength = 0.5
+
+[Throttle Settings]
+
+  ; The simulation preset to use for this trigger.
+  ; Possible values :
+  ;   "constant"
+  ;   "conventional_brakes"
+  ;   "three_stage"
+  ;   "curve"
+preset = "constant"
+
+  ; The overall average force applied to the trigger.
+  ; The simulation will try to cap the force to this value,
+  ; but environment effects may push it over.
+  ; When in 'constant' preset mode, this is the constant force value.
+  ; Possible values : 0.0 to 1.0 (percentage).
+preset_strength = 0.001
+
+  ; When in 'curve' preset mode, this is the shape (slope) of the curve.
+  ; Possible values : -10.0 to 10.0
+  ;   Negative values : The curve is logarithmic.
+  ;   Zero : The curve is linear.
+  ;   Positive values : The curve is exponential.
+curve_preset_shape = 0.0
+
+  ; The strength of the suspension pushback effect.
+  ; When non zero, enables the suspension force effect.
+  ; This will push on the trigger when your suspension compresses.
+  ; Uses the suspension bias global setting.
+  ; Possible values : 0.0 to 1.0 (percentage).
+suspension_effect_strength = 0.25
+
+  ; Smooths the suspension effect.
+  ; This amplifies big changes and minimizes small changes.
+  ; Possible values : true or false.
+suspension_effect_smoothing = false
+
+  ; The strength of the speed force effect.
+  ; The faster you go, the harder it is to press on the trigger.
+  ; Possible values : 0.0 to 1.0 (percentage).
+speed_effect_strength = 0.0
+
 ```
 
 ## Todo
