@@ -156,5 +156,5 @@ speed_effect_strength = 0.0
 ## Todo
 Just some notes so I don't forget. Assume none of this will ever happen.
 - Port selection.
-- Brake temp? What's the telemetry units.
+- Brake fade. What's the telemetry units?
 - ABS
