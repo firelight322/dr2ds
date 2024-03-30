@@ -34,12 +34,12 @@ Adaptive triggers, meet Dirt Rally 2. Dirt Rally 2, meet adaptive triggers.
 ## Telemetry Setup
 To get telemetry feedback, you'll need to enable Dirt Rally UDP packets. But if you have problems with telemetry, you can still use the force feedback presets without it.
 
-1. Navigate to your game folder, usually in `%userprofile%\Documents\My Games\DiRT Rally 2.0\hardwaresettings`
-2. Open `hardware_settings_config.xml` in a text editor like notepad.
-3. Look for a line starting with `<udp`.
-4. Change it to this : `<udp enabled="true" extradata="3" ip="127.0.0.1" port="20777" delay="1" />`
+- Navigate to your game folder, usually in `%userprofile%\Documents\My Games\DiRT Rally 2.0\hardwaresettings`
+- Open `hardware_settings_config.xml` in a text editor like notepad.
+- Look for a line starting with `<udp`.
+- Change it to this : `<udp enabled="true" extradata="3" ip="127.0.0.1" port="20777" delay="1" />`
   - Note, if you didn't find that line, add it to the `<motion_platform>` section.
-5. If all goes well, it should detect both your controller and the game.
+- If all goes well, it should detect both your controller and the game.
 
 ## dr2ds.ini
 The first time you run `dr2ds`, it will create an accompanying ini file. You can customize the behavior through the `dr2ds.ini` file. Most gamers have played around with ini files in the past, but if you haven't, there are comments explaining everything.
