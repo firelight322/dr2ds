@@ -23,6 +23,7 @@ Adaptive triggers, meet Dirt Rally 2. Dirt Rally 2, meet adaptive triggers.
 
 ## Installing
 - Download the latest version from the release page.
+- [Setup Dirt Rally telemetry.](https://github.com/firelight322/dr2ds?tab=readme-ov-file#telemetry-setup)
 - Double click the application to launch.
   - The first time `dr2ds` runs, it will create a default `dr2ds.ini` settings file.
   - You can open up the file and edit it while the app is running, it will update its settings.
