@@ -148,6 +148,10 @@ speed_effect_strength = 0.0
 
 ```
 
+## Known Issues
+- The graphs look like shit, fix them.
+- Investigate : dr2ds disables steam rumble.
+
 ## Todo
 Just some notes so I don't forget. Assume none of this will ever happen.
 - Port selection.
