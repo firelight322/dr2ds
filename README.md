@@ -41,7 +41,7 @@ To get telemetry feedback, you'll need to enable Dirt Rally UDP packets. But if 
 5. If all goes well, it should detect both your controller and the game.
 
 ## dr2ds.ini
-You can customize the behavior through the `dr2ds.ini` file. Most gamers have played around with ini files in the past, but if you haven't, there are comments explaining everything.
+The first time you run `dr2ds`, it will create an accompanying ini file. You can customize the behavior through the `dr2ds.ini` file. Most gamers have played around with ini files in the past, but if you haven't, there are comments explaining everything.
 ```ini
 
 [Global Settings]
