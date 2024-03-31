@@ -28,7 +28,8 @@ Adaptive triggers, meet Dirt Rally 2. Dirt Rally 2, meet adaptive triggers.
   - The first time `dr2ds` runs, it will create a default `dr2ds.ini` settings file.
   - You can open up the file and edit it while the app is running, it will hot reload the settings.
   - Yes it is a terminal application, but you shouldn't need to know anything about command prompts to use it.
-- The app should detect you controller and you should feel forces immediately.
+- The app should detect your controller and you should feel forces immediately.
+- The first time you enter a stage, you should see a confirmation message letting you know telemetry is succesfully setup.
 - Enjoy!
 
 ## Telemetry Setup
