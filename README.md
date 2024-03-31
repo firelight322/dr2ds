@@ -32,6 +32,8 @@ Adaptive triggers, meet Dirt Rally 2. Dirt Rally 2, meet adaptive triggers.
 - The first time you enter a stage, you should see a confirmation message letting you know telemetry is succesfully setup.
 - Enjoy!
 
+Note : Here's how I setup the game's [Steam controller settings](https://raw.githubusercontent.com/firelight322/dr2ds/main/steam-example.jpg). Access these settings by right-clicking the game in your library > Properties... > Controller. This works for me, though other setups should work as well.
+
 ## Telemetry Setup
 To get telemetry feedback, you'll need to enable Dirt Rally UDP packets. But if you have problems with telemetry, you can still use the force feedback presets without it.
 
